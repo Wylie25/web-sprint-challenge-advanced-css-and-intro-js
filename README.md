@@ -23,9 +23,20 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. How would you describe acessibility on the web to someone new to programming?
+
+    Acessabillity on the web allows you to improve the web experience for those with disabillities. So that someone whow is blind can have a speech reader describe the contents of an image to them. This would allow them to share in a similar web experience to everyone else.
+
 2. Talk about 3 different things you can do to ensure your website is accessible. 
+
+    You can give alt tags to images to allow a description of the image to be read off by a speech reader, make you website keyboard friendly so it can be navigated by the tab key for example, and choose colors wisely for those who may be colorblind.
+
 3. How would you explain the concept of a variable to someone new to programming?
+
+    A container for storing data values.
+
 4. What is the purpose of using functions in code?
+
+    A function allows you to write a code to perform a particular task.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
@@ -35,16 +46,16 @@ You are expected to be able to answer questions in these areas. Your responses c
 
 Follow these steps to set up your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your Team Lead as collaborator on Github.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [X] Create a forked copy of this project.
+- [x] Add your Team Lead as collaborator on Github.
+- [x] Clone your OWN version of the repository (Not Lambda's by mistake!).
+- [x] Create a new branch: git checkout -b `<firstName-lastName>`.
 
 ### Task 2a:  Minimum Viable Product - Responsive Design
 
 *Before you jump in, take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built. During this time, [Review the provided design files](design/). You have been provided all content necessary in the [index.html file](index.html) and basic styling in the [index.css file](css/index.css).*
 
-* [ ] Add a viewport meta tag to the head of your index.html page.
+* [x] Add a viewport meta tag to the head of your index.html page.
 * [ ] Add responsive breakpoints to your code for 500px such that your styles match the [mobile design file](design/Mobile.png).
 
 ### Task 2b: Minimum Viable Product - JavaScript
