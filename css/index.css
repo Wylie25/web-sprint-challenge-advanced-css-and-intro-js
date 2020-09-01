@@ -141,7 +141,8 @@ button:hover{
        flex-direction: column;
        align-content: center;
        align-items: center;
-       width: 100%;
+       width: 60%;
+       
    }
    
    nav{
@@ -154,10 +155,13 @@ button:hover{
    }
 
    .title-container div{
-       width: 100%
+       width: 100%;
+       background-size: auto;
+
    }
    h1{
        font-size: 2.5em;
+       font-weight: bold;
    }
 
    .artist{
@@ -166,13 +170,24 @@ button:hover{
    
    .bio{
        font-size: .75em;
-       margin: 0; 
+       margin: 0;
+       width: 100%;
    }
    .img{
-       width: 60%;
+       width: 0 auto;
+       height: auto;
+
    }
    a{
-       padding: 5px;
-       font-size: 1.5rem
+       font-size: 1.5rem;
    }
+
+   .home{
+       font-weight: bolder;
+   }
+
+   nav span{
+    border-left: 2px solid #626262;
+
+}
 }

@@ -249,7 +249,7 @@ console.log(artists);
  * it will return `The artist at index 0 is Amedeo Modigliani`.
  */
 function getArtistByIndex(array, index) {
-  return `${artists[index].name}`;
+  return `The artist at index ${artists[index].id} is ${artists[index].name}`;
 }
 console.log(getArtistByIndex(artists, 0));
 /**
@@ -257,16 +257,18 @@ console.log(getArtistByIndex(artists, 0));
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born in and died in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(artisits, years) {
+function get20s(artists) {
   let died20th = [];
-  for (let i = 0; i < artisits.length; i++)
-    if (artists[i].years === years) {
-      died20th.push(artists[i]);
+  for (let i = 0; i < artists.length; i++){
+    let birthYear = artists[i].years.slice(0, 4)
+    if (birthYear >= 1900 && birthYear <= 2000) {
+      died20th.push(artists[i].name);
     }
+  }
   return died20th;
 }
 
-console.log(get20s(artists, "1900 - 2000"));
+console.log(get20s(artists));
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
  *     (1) artists array
@@ -279,12 +281,8 @@ console.log(get20s(artists, "1900 - 2000"));
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.
  */
 function removeArtist(array, index) {
-  for (let i = 0; i < array.length; i++) {
-    if (array[i].id === index) {
-      array.splice(i, 1);
-    }
-  }
-  return array;
+      array.splice(index, 1);
+  return array.length;
 }
 console.log(removeArtist(artists, 0));
 
@@ -300,20 +298,20 @@ nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) 
 
 At the end, this function should return the new array with information added"*/
-
-function addArtist(array) {
-  artists.push({
-    id: 20,
-    name: "Tyler Wylie",
-    years: "1992-2020",
-    genre: "Web design",
-    nationality: "American",
-    bio:
-      "New up in comer to the web design field but he is making big waves. We are all looking forward to what new things he will bring. ",
-  });
+let tyler = {
+  id: 20,
+  name: "Tyler Wylie",
+  years: "1992-2020",
+  genre: "Web design",
+  nationality: "American",
+  bio:
+    "New up in comer to the web design field but he is making big waves. We are all looking forward to what new things he will bring. ",
+}
+function addArtist(object) {
+  artists.push(object);
   return artists;
 }
-console.log(addArtist(artists));
+console.log(addArtist(tyler));
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
     (1) artists array 
@@ -324,10 +322,11 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 
 function lotsOfArt(artists) {
   let highPaintings = [];
-  for (let i = 0; i < artists.length; i++)
-    if (artists.painting >= 100) {
-      highPaintings.push(artists);
+  for (let i = 0; i < artists.length; i++){
+    if (artists[i].paintings > 100) {
+      highPaintings.push(artists[i].name);
     }
+  }
   return highPaintings;
 }
 

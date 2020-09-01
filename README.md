@@ -24,7 +24,7 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. How would you describe acessibility on the web to someone new to programming?
 
-    Acessabillity on the web allows you to improve the web experience for those with disabillities. So that someone whow is blind can have a speech reader describe the contents of an image to them. This would allow them to share in a similar web experience to everyone else.
+     Acessabillity on the web allows you to improve the web experience for those with disabillities. So that someone whow is blind can have a speech reader describe the contents of an image to them. This would allow them to share in a similar web experience to everyone else.
 
 2. Talk about 3 different things you can do to ensure your website is accessible. 
 
